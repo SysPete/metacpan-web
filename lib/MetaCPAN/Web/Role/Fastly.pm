@@ -84,7 +84,7 @@ has cdn_never_cache => (
 
 has browser_max_age => (
     is      => 'rw',
-    isa     => Int,
+    isa     => Maybe[Int],
     default => sub {undef},
 );
 
